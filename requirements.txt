@@ -1,0 +1,37 @@
+# ── Core API
+fastapi>=0.115
+uvicorn[standard]
+
+# ── DB
+sqlalchemy
+psycopg[binary]
+alembic
+python-dotenv
+
+# ── Scheduler / Utils
+apscheduler
+requests
+
+# ── Search/Retrieval
+sentence-transformers
+scikit-learn
+numpy
+scipy
+elasticsearch
+
+# ── Crawling
+selenium
+
+# (선택) 테스트/품질 도구는 dev에서 별도 관리 추천: ruff, black, pytest 등
+
+# ── Account Management & Security
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+python-multipart
+playwright
+openai
+pydantic[email]
+argon2_cffi
+pydantic_settings
+psycopg2
